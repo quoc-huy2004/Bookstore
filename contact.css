@@ -1,0 +1,142 @@
+/*  RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: BuiQuocHuy
+ID: S3979446
+Acknowledgement: */
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    width: 500px;
+    margin: 0 auto;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: rgb(87, 87, 190);
+    color: white;
+    padding: 10px 20px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.option input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.mobilenavbaricon {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: larger;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navigationbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 5px 20px;
+    }
+
+    .navigationbar ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .navigationbar li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: larger;
+    }
+
+    .navigationbar {
+        display: none;
+    }
+
+    .mobilenavbaricon {
+        display: block;
+    }
+
+    .mobilenavbaricon:hover+.navigationbar {
+        display: block;
+    }
+
+    .navigationbar:hover {
+        display: block;
+    }
+
+    .contact-form input,
+    .contact-form label {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

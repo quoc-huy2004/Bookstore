@@ -1,0 +1,124 @@
+<!-- RMIT University Vietnam -->
+<!-- Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: BuiQuocHuy
+ID: S3979446
+Acknowledgement:  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logo.png" alt="logo" width="20%" height="40%">
+                </div>
+                <h1> Online Bookstore 📚 </h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"> |Home| </a></li>
+                        <li><a href="sub_cate1.html"> Non-fiction| </a></li>
+                        <li><a href="sub_cate2.html"> Fiction| </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<main>
+    <h2>Contact Us</h2>
+    <form action="/contact" method="post">
+        <label for="contact-purpose">Contact Purpose</label>
+
+        <select name="contact-purpose" id="contact-purpose">
+            <option value="I want to sell books">I want to sell books</option>
+            <option value="I want to buy books">I want to buy books</option>
+        </select>
+
+        <br>
+
+        <div class="option">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+
+        <br>
+
+        <div class="option">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <br>
+
+        <div class="option">
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+
+        <br>
+
+        <div class="option">
+            <label for="contact-preference">Contact Preference</label>
+        </div>
+
+        <br>
+
+        <div class="option">
+            <label for="contact-preference-email">By email</label>
+            <input type="checkbox" name="contact-preference" id="contact-preference-phone" value="email">
+        </div>
+
+        <br>
+
+        <div class="option">
+            <label for="contact-preference-phone">By phone</label>
+            <input type="checkbox" name="contact-preference" id="contact-preference-phone" value="phone">
+        </div>
+
+
+        <br>
+
+        <div class="option">
+            <label for="receive-newsletter">Receive Weekly Newsletter</label>
+        </div>
+
+        <br>
+
+        <div class="option">
+            <label for="receive-newsletter-yes">Yes</label>
+            <input type="radio" name="receive-newsletter" id="receive-newsletter-yes" value="yes" checked name="title">
+        </div>
+
+        <br>
+
+        <div class="option">
+            <label for="receive-newsletter-no">No</label>
+            <input type="radio" name="receive-newsletter" id="receive-newsletter-no" value="no" name="title">
+        </div>
+
+        <br>
+
+        <div class="option">
+            <label for="extra-notes">Extra Notes</label>
+            <textarea name="extra-notes" id="extra-notes"></textarea>
+        </div>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</main>
+
+
+</html>
